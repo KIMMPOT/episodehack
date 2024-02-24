@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>epiepi</title>
+    <meta property="og:title" content="epiepi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <header data-thq="thq-navbar" class="home-navbar">
+          <span class="home-logo">sellingepisode.hackgame</span>
+          <div
+            data-thq="thq-navbar-nav"
+            data-role="Nav"
+            class="home-desktop-menu"
+          >
+            <nav
+              data-thq="thq-navbar-nav-links"
+              data-role="Nav"
+              class="home-nav"
+            >
+              <a href="#about" class="home-link button-clean button">About</a>
+              <a href="#options" class="home-link01 button-clean button">
+                Pricing
+              </a>
+              <a href="#FAQ" class="home-link02 button-clean button">FAQ</a>
+            </nav>
+          </div>
+          <div data-thq="thq-navbar-btn-group" class="home-btn-group">
+            <div class="home-socials">
+              <button class="social button">
+                <a
+                  href="https://instagram.com/sellingepisode.hackgame/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <img
+                    alt="image"
+                    src="public/Icons/instagram.svg"
+                    class="home-image"
+                  />
+                </a>
+              </button>
+            </div>
+            <a
+              href="https://instagram.com/sellingepisode.hackgame/"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-view button"
+            >
+              Inquire&nbsp;
+            </a>
+          </div>
+          <div data-thq="thq-burger-menu" class="home-burger-menu">
+            <button class="button home-button">
+              <svg viewBox="0 0 1024 1024" class="home-icon">
+                <path
+                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div data-thq="thq-mobile-menu" class="home-mobile-menu">
+            <div
+              data-thq="thq-mobile-menu-nav"
+              data-role="Nav"
+              class="home-nav1"
+            >
+              <div class="home-container1">
+                <span class="home-logo1">sellingepisode.hackgame</span>
+                <div data-thq="thq-close-menu" class="home-menu-close">
+                  <svg viewBox="0 0 1024 1024" class="home-icon02">
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <nav
+                data-thq="thq-mobile-menu-nav-links"
+                data-role="Nav"
+                class="home-nav2"
+              >
+                <a href="#about" class="home-link04">About</a>
+                <a href="#options" class="home-link05">Pricing</a>
+                <a href="#FAQ" class="home-link06">
+                  <span>FAQ</span>
+                  <br />
+                </a>
+              </nav>
+            </div>
+            <div class="home-icon-group">
+              <a
+                href="https://instagram.com/sellingepisode.hackgame/"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link07"
+              >
+                <svg viewBox="0 0 877.7142857142857 1024" class="home-icon04">
+                  <path
+                    d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </header>
+        <section class="home-hero">
+          <div class="home-heading">
+            <h1 class="home-header">Episode Diamonds &amp; Passes Hack 2024</h1>
+            <p class="home-caption">
+              A legit way to get a cheaper diamonds &amp; passes for Episode -
+              Choose your story.
+            </p>
+          </div>
+          <div class="home-buttons">
+            <a
+              href="https://instagram.com/sellingepisode.hackgame/"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-view1 button"
+            >
+              Visit my instagram
+            </a>
+            <a href="#about" class="home-learn button-clean button">
+              Learn more
+            </a>
+          </div>
+        </section>
+        <section class="home-description">
+          <img
+            alt="image"
+            src="public/episode-splash2-1500w.png"
+            class="home-divider-image"
+          />
+        </section>
+        <section class="home-cards">
+          <div class="home-row">
+            <div id="about" class="home-card">
+              <div class="home-avatar">
+                <a
+                  href="https://instagram.com/sellingepisode.hackgame/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-link08"
+                >
+                  <img
+                    alt="image"
+                    src="public/Avatars/avatar2-400w.jpg"
+                    class="home-avatar1"
+                  />
+                </a>
+              </div>
+              <h2 class="home-header01">Hi I am @sellingepisode.hackgame!</h2>
+              <div class="home-main">
+                <div class="home-content">
+                  <p class="home-description1">
+                    Hi I have been selling Episode diamonds and passes since
+                    April of 2023 for a much more cheaper price. If you want to
+                    learn more about the options that I offer you can visit my
+                    instagram or continue exploring this webpage. You can send
+                    me a DM on my instagram if you want to purchase!
+                  </p>
+                </div>
+                <button class="home-learn1 button">
+                  <a href="#options" class="home-link09">Learn more</a>
+                  <img
+                    alt="image"
+                    src="public/Icons/arrow.svg"
+                    class="home-image01"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="options" class="home-collection">
+          <div class="home-content01">
+            <span class="home-caption1">
+              EPISODE DIAMONDS &amp; PASSES OPTIONS
+            </span>
+            <div class="home-heading1">
+              <h2 class="home-header02">
+                These options are available for both iOS &amp; Android!
+              </h2>
+              <p class="home-header03">
+                These&nbsp; are the services that I offer. Please note that you
+                will need to message me on my instagram to avail my
+                services.&nbsp;&nbsp;
+              </p>
+            </div>
+          </div>
+          <div class="home-main1">
+            <div class="home-card1">
+              <div class="home-image02">
+                <img
+                  alt="image"
+                  src="public/options/option1.svg"
+                  class="home-image03"
+                />
+              </div>
+              <div class="home-content02">
+                <span class="home-caption2">EPISODE PACK A</span>
+                <h3 class="home-title">$10</h3>
+              </div>
+            </div>
+            <div class="home-card2">
+              <div class="home-image04">
+                <img
+                  alt="image"
+                  src="public/options/option2.svg"
+                  class="home-image05"
+                />
+              </div>
+              <div class="home-content03">
+                <span class="home-caption3">EPISODE PACK B</span>
+                <h3 class="home-title1">$15</h3>
+              </div>
+            </div>
+            <div class="home-card3">
+              <div class="home-image06">
+                <img
+                  alt="image"
+                  src="public/options/option3.svg"
+                  class="home-image07"
+                />
+              </div>
+              <div class="home-content04">
+                <span class="home-caption4">EPISODE PACK C</span>
+                <h3 class="home-title2">$25</h3>
+              </div>
+            </div>
+            <div class="home-card4">
+              <div class="home-image08">
+                <img
+                  alt="image"
+                  src="public/options/refilla.svg"
+                  class="home-image09"
+                />
+              </div>
+              <div class="home-content05">
+                <span class="home-caption5">EPISODE REFILL A</span>
+                <h3 class="home-title3">$8</h3>
+              </div>
+            </div>
+            <div class="home-card5">
+              <div class="home-image10">
+                <img
+                  alt="image"
+                  src="public/options/refillb.svg"
+                  class="home-image11"
+                />
+              </div>
+              <div class="home-content06">
+                <span class="home-caption6">EPISODE REFILL B</span>
+                <h3 class="home-title4">$12</h3>
+              </div>
+            </div>
+            <div class="home-card6">
+              <div class="home-image12">
+                <img
+                  alt="image"
+                  src="public/options/refillc.svg"
+                  class="home-image13"
+                />
+              </div>
+              <div class="home-content07">
+                <span class="home-caption7">EPISODE REFILL C</span>
+                <h3 class="home-title5">$15</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="FAQ" class="home-faq">
+          <h2 class="home-header04">Frequently Ask Question</h2>
+          <div class="home-accordion">
+            <div data-role="accordion-container" class="home-element accordion">
+              <div class="home-content08">
+                <span class="home-header05">
+                  How do I purchase an Episode hack?
+                </span>
+                <span data-role="accordion-content" class="home-description2">
+                  You can purchase by sending me a DM on my instagram. I will
+                  respond as soon as possible :)
+                </span>
+              </div>
+              <div class="home-icon-container">
+                <svg
+                  viewBox="0 0 1024 1024"
+                  data-role="accordion-icon-closed"
+                  class="home-icon06"
+                >
+                  <path
+                    d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 1024 1024"
+                  data-role="accordion-icon-open"
+                  class="home-icon08"
+                >
+                  <path
+                    d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              data-role="accordion-container"
+              class="home-element1 accordion"
+            >
+              <div class="home-content09">
+                <span class="home-header06">
+                  Is this a new account or can I hack my current progress?
+                </span>
+                <span data-role="accordion-content" class="home-description3">
+                  When I perform a hack on Episode, it is applied to your
+                  current progress. I do not create or offer new accounts for
+                  this process.
+                </span>
+              </div>
+              <div class="home-icon-container1">
+                <svg
+                  viewBox="0 0 1024 1024"
+                  data-role="accordion-icon-closed"
+                  class="home-icon10"
+                >
+                  <path
+                    d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 1024 1024"
+                  data-role="accordion-icon-open"
+                  class="home-icon12"
+                >
+                  <path
+                    d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              data-role="accordion-container"
+              class="home-element2 accordion"
+            >
+              <div class="home-content10">
+                <span class="home-header07">
+                  Can I get ban from getting an Episode hack?
+                </span>
+                <span data-role="accordion-content" class="home-description4">
+                  As I have always said, purchases made are done at your own
+                  risk. On the other hand, I have started selling Episode hacks
+                  since April of 2023 and none of my customer has been banned
+                  yet. Also the way I add gems and passes is the same how the
+                  game system adds it, which is much more safer than using third
+                  party tools.
+                </span>
+              </div>
+              <div class="home-icon-container2">
+                <svg
+                  viewBox="0 0 1024 1024"
+                  data-role="accordion-icon-closed"
+                  class="home-icon14"
+                >
+                  <path
+                    d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 1024 1024"
+                  data-role="accordion-icon-open"
+                  class="home-icon16"
+                >
+                  <path
+                    d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              data-role="accordion-container"
+              class="home-element3 accordion"
+            >
+              <div class="home-content11">
+                <span class="home-header08">
+                  How long does the process would take?
+                </span>
+                <span data-role="accordion-content" class="home-description5">
+                  The process would only take 3-5 mins. The maximum is 15 mins.
+                </span>
+              </div>
+              <div class="home-icon-container3">
+                <svg
+                  viewBox="0 0 1024 1024"
+                  data-role="accordion-icon-closed"
+                  class="home-icon18"
+                >
+                  <path
+                    d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 1024 1024"
+                  data-role="accordion-icon-open"
+                  class="home-icon20"
+                >
+                  <path
+                    d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              data-role="accordion-container"
+              class="home-element4 accordion"
+            >
+              <div class="home-content12">
+                <span class="home-header09">What is your payment method?</span>
+                <span data-role="accordion-content" class="home-description6">
+                  <span>-PayPal</span>
+                  <br />
+                  <span>-GCASH (Philippines Only)</span>
+                  <br />
+                  <br />
+                  <span>
+                    You can make a payment through PayPal even if you don't have
+                    an account since I use PayPal checkout. As long as you have
+                    a Debit or Credit Card , then you are good to go.
+                  </span>
+                </span>
+              </div>
+              <div class="home-icon-container4">
+                <svg
+                  viewBox="0 0 1024 1024"
+                  data-role="accordion-icon-closed"
+                  class="home-icon22"
+                >
+                  <path
+                    d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 1024 1024"
+                  data-role="accordion-icon-open"
+                  class="home-icon24"
+                >
+                  <path
+                    d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-get-yours">
+          <div class="home-column">
+            <div class="home-card7">
+              <div class="home-content13">
+                <h2 class="home-header10">Get yours now!</h2>
+                <p class="home-description7">
+                  You can check some of my proof of transactions by visiting my
+                  instagram. If you want to purchase then send me a DM and I
+                  will respond if I am online. :)
+                </p>
+              </div>
+              <a
+                href="https://instagram.com/sellingepisode.hackgame/"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link10 button"
+              >
+                Visit my instagram
+              </a>
+            </div>
+          </div>
+        </section>
+        <footer class="home-footer">
+          <div class="home-main2">
+            <div class="home-branding">
+              <div class="home-heading2">
+                <h2 class="home-logo2">@sellingepisode.hackgame</h2>
+                <p class="home-caption8">
+                  Thank you for visiting my website. Happy Gaming! :)
+                </p>
+              </div>
+              <div class="home-socials1"></div>
+            </div>
+            <div class="home-links">
+              <div class="home-list">
+                <h3 class="home-heading3">Site</h3>
+                <div class="home-items">
+                  <a href="#about" class="home-link11 button-clean button">
+                    About
+                  </a>
+                  <a href="#options" class="home-link12 button-clean button">
+                    Pricing
+                  </a>
+                  <a href="#FAQ" class="home-link13 button-clean button">FAQ</a>
+                </div>
+              </div>
+            </div>
+            <a
+              href="https://instagram.com/sellingepisode.hackgame/"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-link14"
+            >
+              <div class="home-socials2">
+                <button class="social button">
+                  <img
+                    alt="image"
+                    src="public/Icons/instagram.svg"
+                    class="home-image14"
+                  />
+                </button>
+              </div>
+            </a>
+          </div>
+          <span class="home-copyright">
+            © 2024 sellingepisode.hackgame. All Rights Reserved.
+          </span>
+        </footer>
+        <div>
+          <div class="home-container3">
+            <script>
+              /*
+               Accordion - Code Embed
+               */
+               const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
+               const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
+               const accordionIconsClosed = document.querySelectorAll('[data-role='accordion-icon-closed']'); // All accordion closed icons
+               const accordionIconsOpen = document.querySelectorAll('[data-role='accordion-icon-open']'); // All accordion open icons
+
+               accordionContents.forEach((accordionContent) => {
+                   accordionContent.style.display = 'none'; //Hides all accordion contents
+               });
+
+               accordionIconsClosed.forEach((icon) => {
+                 icon.style.display = 'flex'
+               })
+
+               accordionIconsOpen.forEach((icon) => {
+                 icon.style.display = 'none'
+               })
+
+               accordionContainers.forEach((accordionContainer, index) => {
+                   accordionContainer.addEventListener('click', () => {
+                       if (accordionContents[index].style.display === 'flex') {
+                           // If the accordion is already open, close it
+                           accordionContents[index].style.display = 'none';
+                           accordionIconsClosed[index].style.display = 'flex';
+                           accordionIconsOpen[index].style.display = 'none'
+                       } else {
+                           // If the accordion is closed, open it
+                           accordionContents.forEach((accordionContent) => {
+                               accordionContent.style.display = 'none'; //Hides all accordion contents
+                           });
+
+                           accordionIconsClosed.forEach((accordionIcon) => {
+                               accordionIcon.style.display = 'flex'; // Resets all icon transforms to 0deg (default)
+                           });
+
+                           accordionIconsOpen.forEach((accordionIcon) => {
+                             accordionIcon.style.display = 'none';
+                           })
+
+                           accordionContents[index].style.display = 'flex'; // Shows accordion content
+                           accordionIconsClosed[index].style.display = 'none'; // Rotates accordion icon 180deg
+                           accordionIconsOpen[index].style.display = 'flex';
+                       }
+                   });
+               });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>
